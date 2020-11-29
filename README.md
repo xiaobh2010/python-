@@ -11,14 +11,12 @@ def 方法名称(cls,参数列表):
 
 class YYY:
     total=100
-
     def __init__(self):
         YYY.total-=1
 
     @classmethod
     def print_total(cls):
         print(cls.total)
-
 y=YYY()
 YYY.print_total()
 
@@ -32,16 +30,12 @@ def 方法名称(参数列表):
 2 调用
 类名.方法名(参数列表)
 不建议通过对象访问静态方法
-
 class XXX:
     def __init__(self):
         pass
-
     @staticmethod
     def func():
         print('hello world')
-
-
 x=XXX()
 XXX.func()
 
