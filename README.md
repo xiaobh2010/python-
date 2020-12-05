@@ -45,10 +45,17 @@ XXX.func()
 
 
 ----------------------------------------------------------------------------
+super（）方法
+示例：
+class Animal:
+    def __init__(self,name,age=0):
+        self.name=name
+        self.__age=age
 
-
-
-
+class Dog(Animal):
+    def __init__(self,name,age,score=0):
+        super().__init__(name,age)
+        self.score=score
 
 
 
